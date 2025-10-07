@@ -218,7 +218,7 @@ def analyze_video(org_path: str, dst_path: str, vid_list: List[str]) -> None:
     """
     device = "cuda" if torch.cuda.is_available() else "cpu"
     config_file = './musetalk/utils/dwpose/rtmpose-l_8xb32-270e_coco-ubody-wholebody-384x288.py'
-    checkpoint_file = './models/dwpose/dw-ll_ucoco_384.pth'
+    checkpoint_file = './musetalk/models/dwpose/dw-ll_ucoco_384.pth'
 
     analyze_face = AnalyzeFace(device, config_file, checkpoint_file)
     
