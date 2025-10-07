@@ -563,7 +563,7 @@ if sys.platform == 'win32':
 
 # Start Gradio application
 demo.queue().launch(
-    share=args.share, 
+    share=True, 
     debug=True, 
     server_name=args.ip, 
     server_port=args.port
